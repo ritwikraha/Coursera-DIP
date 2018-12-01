@@ -32,7 +32,7 @@ for i=1:255;
 
 for j=1:321;
 
-I1_sample=I_1(i:i+31,j:j+31);
+I1_sample=I_1(i:i+31,j:j+31);%advancing the position by the chosen window 
 
 MAE=sum(sum(abs(I1_sample-Block)))/(32*32);
 
